@@ -117,3 +117,5 @@ export const Box = forwardRef((
     </MTBox>
   )
 })
+
+Box.displayName = "Box";

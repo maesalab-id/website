@@ -11,7 +11,7 @@ export function HeroBanner() {
       <Container size={700} className={classes.inner}>
         <h1 className={classes.title}>
           Focused on{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+          <Text component="span" variant="gradient" gradient={{ from: 'green', to: 'teal' }} inherit>
             Web Standards
           </Text>{' '}
           to build better technologies
@@ -28,7 +28,7 @@ export function HeroBanner() {
             size="xl"
             className={classes.control}
             variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan' }}
+            gradient={{ from: 'green', to: 'teal' }}
           >
             Book now
           </Button>

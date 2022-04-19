@@ -6,17 +6,24 @@ export default createStyles((theme) => ({
     paddingBottom: 50,
   },
 
-  item: {
-    display: 'flex',
+  supTitle: {
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    fontWeight: 800,
+    fontSize: theme.fontSizes.sm,
+    color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 8],
+    letterSpacing: 0.5,
   },
 
-  itemIcon: {
-    padding: theme.spacing.xs,
-    marginRight: theme.spacing.md,
+  title: {
+    lineHeight: 1,
+    textAlign: 'center',
+    marginTop: theme.spacing.md,
   },
 
-  itemTitle: {
-    marginBottom: theme.spacing.xs / 2,
+  description: {
+    textAlign: 'center',
+    marginTop: theme.spacing.xs,
   },
 
   highlight: {

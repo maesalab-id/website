@@ -37,7 +37,7 @@ export function WhyMaesa() {
         size={44}
         radius="md"
         variant="gradient"
-        gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+        gradient={{ deg: 133, from: 'green', to: 'teal' }}
       >
         <feature.icon size={26} />
       </ThemeIcon>
@@ -57,7 +57,7 @@ export function WhyMaesa() {
           <Col span={12} md={5}>
             <Title className={classes.title} order={2}>
               Why Choose {' '}
-              <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+              <Text component="span" variant="gradient" gradient={{ from: 'green', to: 'teal' }} inherit>
                 Maesalab
               </Text>{' '}
             </Title>
@@ -69,7 +69,7 @@ export function WhyMaesa() {
               component="a"
               href="#contact"
               variant="gradient"
-              gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+              gradient={{ deg: 133, from: 'green', to: 'teal' }}
               size="lg"
               radius="md"
               mt="lg"
@@ -78,7 +78,7 @@ export function WhyMaesa() {
             </Button>
           </Col>
           <Col span={12} md={7}>
-            <SimpleGrid cols={2} spacing={"lg"} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+            <SimpleGrid cols={2} spacing={"lg"} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
               {items}
             </SimpleGrid>
           </Col>

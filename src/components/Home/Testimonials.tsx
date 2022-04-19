@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, Container, Title, SimpleGrid } from '@mantine/core';
+import { Container, Grid } from '@mantine/core';
 import useStyles from './Testimonials.styles';
 import { Comment } from './Comments';
+import { SectionText } from './SectionText';
 
 const testimonials = [{
   postedAt: "Pemerintah Kota Manado",
@@ -94,30 +95,22 @@ export function Testimonials() {
 
   return (
     <>
-      <Container id="testimonials" size={700} className={classes.wrapper}>
-        <Text className={classes.supTitle}>Testimonials</Text>
-
-        <Title className={classes.title} order={2}>
-          What <span className={classes.highlight}>founders</span> are saying
-        </Title>
-
-        <Container size={660} p={0}>
-          <Text color="dimmed" className={classes.description}>
-            {`Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill's tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.`}
-          </Text>
-        </Container>
-
-      </Container>
+      <SectionText
+        title={<>What <span className={classes.highlight}>founders</span> are saying</>}
+        subTitle={"Testimonials"}
+        description={`Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill's tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.`}
+      />
       <Container mb="xl">
-        <SimpleGrid cols={3}>
+        <Grid align="stretch">
           {testimonials.map(({ postedAt, body, author }, index) => (
-            <Comment
-              key={index}
-              postedAt={postedAt}
-              body={body}
-              author={author}
-            />))}
-        </SimpleGrid>
+            <Grid.Col key={index} sm={6} md={4}>
+              <Comment
+                postedAt={postedAt}
+                body={body}
+                author={author}
+              />
+            </Grid.Col>))}
+        </Grid>
       </Container>
     </>
   );

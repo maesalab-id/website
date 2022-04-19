@@ -28,6 +28,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <MantineProvider
           theme={{
             colorScheme,
+            primaryColor: "green",
             spacing: {
               xs: 8,
               sm: 16,

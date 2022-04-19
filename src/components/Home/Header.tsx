@@ -1,7 +1,8 @@
-import { Anchor, Button, Center, Container, Header as MTHeader, Menu, Title } from "@mantine/core"
+import { Anchor, Burger, Button, Center, Container, Header as MTHeader, Menu, Title } from "@mantine/core"
+import { useBooleanToggle } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons"
-import NextLink from 'next/link'
 import { Box } from "../Box"
+import { MaesalabLogo } from "../Maesalab";
 import useStyles from "./Header.styles"
 
 interface Links {
@@ -23,7 +24,8 @@ const links: Links[] = [{
 
 
 export const Header = () => {
-  const { classes, theme } = useStyles();
+  const { classes, cx } = useStyles();
+  const [opened, toggleOpened] = useBooleanToggle(false);
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
       <Menu.Item
@@ -71,21 +73,18 @@ export const Header = () => {
   return (
     <MTHeader height={60}>
       <Container className={classes.inner}>
-        <Box flex grow justify="between">
+        <Box flex grow align="center">
           <Box>
             <Anchor
               href="/"
               color={"dark"}
             >
-              <Title
-                order={3}
-                sx={{
-                  fontWeight: 900,
-                }}
-              >MaesaLab</Title>
+              <MaesalabLogo style={{
+                display: "block"
+              }} />
             </Anchor>
           </Box>
-          <Box>
+          <Box className={classes.links}>
             {items}
           </Box>
           <Button component="a" href="contact">Contact us</Button>

@@ -4,8 +4,13 @@ export default createStyles((theme) => ({
   inner: {
     height: 60,
     display: 'flex',
-    justifyContent: 'space-between',
     alignItems: 'center',
+    ["> div"]: {
+      justifyContent: "space-between",
+      // [theme.fn.smallerThan('sm')]: {
+      //   justifyContent: "flex-start",
+      // }
+    }
   },
 
   links: {

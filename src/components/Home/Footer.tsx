@@ -3,6 +3,7 @@ import { Text, Container, ActionIcon, Group, Title } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
 import useStyles from "./Footer.styles";
 import { Box } from '../Box';
+import { MaesalabLogo } from '../Maesalab';
 
 interface FooterLinksProps {
   data: {
@@ -16,16 +17,16 @@ const data: FooterLinksProps["data"] = [{
   links: [{
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
   },]
@@ -34,16 +35,16 @@ const data: FooterLinksProps["data"] = [{
   links: [{
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
   },]
@@ -52,16 +53,16 @@ const data: FooterLinksProps["data"] = [{
   links: [{
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
-  },{
+  }, {
     label: "Features",
     link: "features"
   },]
@@ -96,12 +97,7 @@ export function Footer() {
       <Container className={classes.inner}>
         <div className={classes.logo}>
           <Box>
-            <Title
-              order={3}
-              sx={{
-                fontWeight: 900,
-              }}
-            >MaesaLab</Title>
+            <MaesalabLogo />
           </Box>
           <Text size="xs" color="dimmed" className={classes.description}>
             Build fully functional accessible web applications faster than ever

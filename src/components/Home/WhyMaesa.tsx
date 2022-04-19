@@ -1,30 +1,30 @@
 import React from 'react';
 import { Title, SimpleGrid, Text, Button, ThemeIcon, Grid, Col, Container } from '@mantine/core';
-import { IconReceiptOff, IconFlame, IconCircleDotted, IconFileCode } from '@tabler/icons';
+import { IconFileCode, IconMap, IconWand, IconCpu } from '@tabler/icons';
 import useStyles from './WhyMaesa.styles';
 
 const features = [
   {
-    icon: IconReceiptOff,
-    title: 'Free and open source',
-    description: 'All packages are published under MIT license, you can use Mantine in any project',
+    icon: IconMap,
+    title: 'Mapping Service',
+    description: 'WebGIS, Map API like Raster or Vector Tiles',
   },
   {
     icon: IconFileCode,
-    title: 'TypeScript based',
-    description: 'Build type safe applications, all components and hooks export types',
+    title: 'Digital Projects',
+    description: 'Web Technology, Data Engineering, Enterprise Consulting, Mobile Technology',
   },
   {
-    icon: IconCircleDotted,
-    title: 'No annoying focus ring',
+    icon: IconWand,
+    title: 'Creative Projects',
     description:
-      'With new :focus-visible selector focus ring will appear only when user navigates with keyboard',
+      'User Experience, User Interface and Creative Design',
   },
   {
-    icon: IconFlame,
-    title: 'Flexible',
+    icon: IconCpu,
+    title: 'Smart Projects Services',
     description:
-      'Customize colors, spacing, shadows, fonts and many other settings with global theme object',
+      'Internet of Things, Unmanned Aerill Vehicles (UAV)',
   },
 ];
 
@@ -62,7 +62,7 @@ export function WhyMaesa() {
               </Text>{' '}
             </Title>
             <Text color="dimmed">
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              Assist all types of companies and governments in Indonesia in utilizing a reliable and integrated information system
             </Text>
 
             <Button

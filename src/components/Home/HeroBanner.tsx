@@ -18,7 +18,7 @@ export function HeroBanner() {
         </h1>
 
         <Text className={classes.description} color="dimmed">
-          {`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`}
+          {`Enable a classy geospatial app or non-spatial development in Indonesia`}
         </Text>
 
         <Group className={classes.controls}>

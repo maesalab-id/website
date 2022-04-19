@@ -49,10 +49,16 @@ export function Services() {
   return (
     <>
       <SectionText
-        id="services"
-        title={<>We serve <span className={classes.highlight}>digital</span> needs for you.</>}
-        subTitle={"Services"}
-        description={`Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill's tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.`}
+        id="about"
+        title={<>Who are <span className={classes.highlight}>MaesaLab</span>?</>}
+        subTitle={"About"}
+        // description={`PT. MAESALAB TECH INDONESIA adalalah perusahaan perangkat lunak yang didedikasikan untuk 
+        // mengembangkan solusi dan memecahkan masalah paling penting dalam industri spasial, smart city dan 
+        // bisnis di Sulawesi utara. Perusahaan kami didirkan pada akhir November 2021 dengan produk utamanya 
+        // aplikasi Geospasial berbasis web dan aplikasi lainnya yang pengembangannya sudah mulai dari tahun 
+        // 2017. Para pendiri adalah anak-anak muda Sulawesi utara yang memiliki pengalaman dan komitmen 
+        // untuk selalu menciptakan produk yang berkualitas dalam hal design, daya tarik visual, performa, fungsi, 
+        // dan keamanan.`}
       />
       <Container pb="xl">
         <Grid gutter="md" justify="center">

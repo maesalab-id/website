@@ -49,6 +49,7 @@ export function Services() {
   return (
     <>
       <SectionText
+        id="services"
         title={<>We serve <span className={classes.highlight}>digital</span> needs for you.</>}
         subTitle={"Services"}
         description={`Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill's tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.`}

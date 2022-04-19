@@ -67,7 +67,7 @@ export default createStyles((theme) => {
 
       [theme.fn.largerThan("md")]: {
         color: "white",
-        background: theme.fn.linearGradient(45, "violet", "blue"),
+        background: theme.fn.linearGradient(45, "teal", "green"),
         borderTopLeftRadius: 0,
         borderBottomLeftRadius: 0,
         marginBottom: theme.spacing.sm,

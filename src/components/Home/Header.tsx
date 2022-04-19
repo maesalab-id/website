@@ -21,6 +21,9 @@ const links: Links[] = [{
 }, {
   link: "/#testimonials",
   label: "Testimonials",
+}, {
+  link: "/#services",
+  label: "Services",
 }]
 
 

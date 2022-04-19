@@ -67,7 +67,7 @@ export function WhyMaesa() {
 
             <Button
               component="a"
-              href="#contact"
+              href="contact"
               variant="gradient"
               gradient={{ deg: 133, from: 'green', to: 'teal' }}
               size="lg"

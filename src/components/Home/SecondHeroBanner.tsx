@@ -31,10 +31,20 @@ export function SecondHeroBanner() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} size="lg" variant="default" color="gray">
+          <Button
+            component="a"
+            href="contact"
+            className={classes.control}
+            size="lg"
+            variant="default"
+            color="gray">
             Book Now
           </Button>
-          <Button className={classes.control} size="lg">
+          <Button
+            component="a"
+            href="contact"
+            className={classes.control}
+            size="lg">
             Contact
           </Button>
         </div>

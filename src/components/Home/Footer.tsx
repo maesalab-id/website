@@ -104,7 +104,7 @@ export function Footer() {
             <br />
             Telp: <Anchor size="xs" target={"_blank"} href={`https://api.whatsapp.com/send?phone=+62816-234-579`}>+62 816-234-579</Anchor>
             <br />
-            Email: contact@maesalab.com
+            Email: <Anchor size="xs" href={`mailto:contact@maesalab.com`}>contact@maesalab.com</Anchor>
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>

@@ -1,5 +1,6 @@
-import { Anchor, Burger, Button, Center, Container, Header as MTHeader, Menu, Title } from "@mantine/core"
+import { Anchor, Button, Center, Container, Header as MTHeader, Menu } from "@mantine/core"
 import { useBooleanToggle } from "@mantine/hooks";
+import NextLink from "next/link";
 import { IconChevronDown } from "@tabler/icons"
 import { Box } from "../Box"
 import { MaesalabLogo } from "../Maesalab";
@@ -12,13 +13,13 @@ interface Links {
 }
 
 const links: Links[] = [{
-  link: "#product",
+  link: "/#product",
   label: "Products",
 }, {
-  link: "#why",
+  link: "/#why",
   label: "Why",
 }, {
-  link: "#testimonials",
+  link: "/#testimonials",
   label: "Testimonials",
 }]
 
@@ -45,12 +46,14 @@ export const Header = () => {
           placement="end"
           gutter={1}
           control={
-            <Button component="a" href={link.link} variant="subtle" size="xs">
-              <Center>
-                <span className={classes.linkLabel}>{link.label}</span>
-                <IconChevronDown size={12} />
-              </Center>
-            </Button>
+            <NextLink href={link.link} passHref>
+              <Button component="a" variant="subtle" size="xs">
+                <Center>
+                  <span className={classes.linkLabel}>{link.label}</span>
+                  <IconChevronDown size={12} />
+                </Center>
+              </Button>
+            </NextLink>
           }
         >
           {menuItems}
@@ -59,14 +62,15 @@ export const Header = () => {
     }
 
     return (
-      <Button
-        key={link.link}
-        component="a"
-        href={link.link}
-        variant="subtle"
-        size="xs">
-        {link.label}
-      </Button>
+      <NextLink key={link.link} href={link.link} passHref>
+        <Button
+          component="a"
+          href={link.link}
+          variant="subtle"
+          size="xs">
+          {link.label}
+        </Button>
+      </NextLink>
     );
   });
 

@@ -14,7 +14,7 @@ import useStyles from './GetInTouch.styles';
 import { Box } from '../Box';
 
 export function GetInTouch() {
-  const { classes } = useStyles();
+  const { classes, theme } = useStyles();
 
   return (
     <Container className={classes.wrapper}>
@@ -24,12 +24,16 @@ export function GetInTouch() {
             <div>
               <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
                 <Text
-                  size="xl"
                   weight={900}
-                  className={classes.title}
                   mb="md"
                   variant="gradient"
-                  gradient={{ from: 'blue', to: 'cyan' }}>
+                  gradient={{ from: 'blue', to: 'cyan' }}
+                  sx={{
+                    fontSize: theme.fontSizes.md * 2,
+                    [theme.fn.largerThan("xs")]: {
+                      fontSize: theme.fontSizes.xl * 2,
+                    }
+                  }}>
                   Talk to our sales team
                 </Text>
 
@@ -67,20 +71,33 @@ export function GetInTouch() {
               height: "100%"
             }}>
             <div className={classes.contacts}>
-              <Text size="lg" weight={700} className={classes.title} sx={{ color: '#fff' }}>
-                Maesalab mailing address
-              </Text>
-              <Text sx={{ color: '#fff' }}>
-                88 Colin P Kelly Jr St
-                San Francisco, CA 94107
-                United States
-              </Text>
-              <Text mt="lg" size="lg" weight={700} className={classes.title} sx={{ color: '#fff' }}>
-                Phone Number
-              </Text>
-              <Text sx={{ color: '#fff' }}>
-                +1 (877) 958-8742
-              </Text>
+              <div>
+                <Text size="lg" weight={700} className={classes.title}>
+                  Maesalab mailing address
+                </Text>
+                <Text>
+                  Griya Paniki Indah, Jl. Eidelweeis Utama No. 44<br /> Kota Manado, Sulawesi Utara
+                </Text>
+              </div>
+              <div>
+                <Text mt="lg" size="lg" weight={700} className={classes.title}>
+                  Phone Number
+                </Text>
+                <Text>
+                  +62 816-234-579
+                </Text>
+              </div>
+              <div>
+                <Text mt="lg" size="lg" weight={700} className={classes.title}>
+                  Email Address
+                </Text>
+                <Text>
+                  product@maesalab.com
+                </Text>
+                <Text sx={{ color: '#fff' }}>
+                  contact@maesalab.com
+                </Text>
+              </div>
             </div>
           </Box>
         </Grid.Col>

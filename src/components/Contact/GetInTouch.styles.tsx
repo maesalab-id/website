@@ -60,14 +60,16 @@ export default createStyles((theme) => {
       boxSizing: 'border-box',
       position: 'relative',
       borderRadius: theme.radius.lg,
-      borderTopLeftRadius: 0,
-      borderBottomLeftRadius: 0,
-      background: theme.fn.linearGradient(45, "violet", "blue"),
+      background: "none",
       border: '1px solid transparent',
       padding: theme.spacing.md,
+      color: theme.colors.dark[6],
 
-      [BREAKPOINT]: {
-        borderRadius: theme.radius.lg,
+      [theme.fn.largerThan("md")]: {
+        color: "white",
+        background: theme.fn.linearGradient(45, "violet", "blue"),
+        borderTopLeftRadius: 0,
+        borderBottomLeftRadius: 0,
         marginBottom: theme.spacing.sm,
         paddingLeft: theme.spacing.md,
       },

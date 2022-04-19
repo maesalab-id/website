@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Container, ActionIcon, Group, Title } from '@mantine/core';
+import { Text, Container, ActionIcon, Group, Title, Anchor } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
 import useStyles from "./Footer.styles";
 import { Box } from '../Box';
@@ -13,59 +13,59 @@ interface FooterLinksProps {
 }
 
 const data: FooterLinksProps["data"] = [{
-  title: "About",
+  title: "Products",
   links: [{
-    label: "Features",
-    link: "features"
+    label: "Geospatial Manager",
+    link: "products/geospatial-manager"
   }, {
-    label: "Features",
-    link: "features"
+    label: "E-Office",
+    link: "products/e-office"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Prisy",
+    link: "products/prisy"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Job Desk",
+    link: "products/job-desk"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Digital Sign",
+    link: "products/digital-sign"
   },]
 }, {
-  title: "Project",
+  title: "",
   links: [{
-    label: "Features",
-    link: "features"
+    label: "Ovor",
+    link: "products/ovor"
   }, {
-    label: "Features",
-    link: "features"
+    label: "IoT Sensor",
+    link: "products/iot-sensor"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Asset",
+    link: "products/asset"
   }, {
-    label: "Features",
-    link: "features"
+    label: "POS",
+    link: "products/pos"
   }, {
-    label: "Features",
-    link: "features"
-  },]
+    label: "Antrian Online",
+    link: "products/antrian-online"
+  }, {
+    label: "CTS",
+    link: "products/cts"
+  }]
 }, {
-  title: "Community",
+  title: "Services",
   links: [{
-    label: "Features",
-    link: "features"
+    label: "Mapping Services",
+    link: "services/mapping"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Digital Projects",
+    link: "services/digital"
   }, {
-    label: "Features",
-    link: "features"
+    label: "Creative Project",
+    link: "services/creative"
   }, {
-    label: "Features",
-    link: "features"
-  }, {
-    label: "Features",
-    link: "features"
-  },]
+    label: "Smart Projects Services",
+    link: "services/smart"
+  }]
 }]
 
 
@@ -101,6 +101,10 @@ export function Footer() {
           </Box>
           <Text size="xs" color="dimmed" className={classes.description}>
             Build fully functional accessible web applications faster than ever
+            <br />
+            Telp: <Anchor size="xs" target={"_blank"} href={`https://api.whatsapp.com/send?phone=+62816-234-579`}>+62 816-234-579</Anchor>
+            <br />
+            Email: contact@maesalab.com
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>

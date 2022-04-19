@@ -24,6 +24,7 @@ export function Card({ title, description, icon, color, sx }: CardGradientProps)
           "blue": { deg: 0, from: 'cyan', to: 'blue' },
           "green": { deg: 0, from: 'teal', to: 'green' },
           "teal": { deg: 0, from: 'teal', to: 'blue' },
+          "yellow": { deg: 0, from: 'yellow', to: 'orange' },
         }[color]}
       >
         {icon}

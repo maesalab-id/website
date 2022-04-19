@@ -40,6 +40,26 @@ const products = [{
   icon: <IconColorSwatch size={28} />,
   title: "IoT Sensor",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+}, {
+  color: "blue",
+  icon: <IconColorSwatch size={28} />,
+  title: "Asset",
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+}, {
+  color: "yellow",
+  icon: <IconColorSwatch size={28} />,
+  title: "POS",
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+}, {
+  color: "red",
+  icon: <IconColorSwatch size={28} />,
+  title: "Antrian online",
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+}, {
+  color: "blue",
+  icon: <IconColorSwatch size={28} />,
+  title: "CTS",
+  description: "Control Tracking System, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
 }];
 
 export function Products() {
@@ -57,6 +77,9 @@ export function Products() {
           {products.map(({ color, title, description, icon }, index) => (
             <Grid.Col key={index} sm={6} md={4}>
               <Card
+                sx={{
+                  height: "100%"
+                }}
                 color={color}
                 title={title}
                 description={description}

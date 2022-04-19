@@ -32,6 +32,7 @@ export default createStyles((theme, { color = "red" }: StylesCardProps) => {
           purple: theme.fn.linearGradient(0, theme.colors.violet[6], theme.colors.blue[6]),
           green: theme.fn.linearGradient(0, theme.colors.teal[6], theme.colors.green[6]),
           teal: theme.fn.linearGradient(0, theme.colors.blue[6], theme.colors.teal[6]),
+          yellow: theme.fn.linearGradient(0, theme.colors.yellow[6], theme.colors.orange[6]),
         })[color],
       },
     },

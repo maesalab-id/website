@@ -67,6 +67,7 @@ export default createStyles((theme) => {
       padding: theme.spacing.md,
 
       [BREAKPOINT]: {
+        borderRadius: theme.radius.lg,
         marginBottom: theme.spacing.sm,
         paddingLeft: theme.spacing.md,
       },
@@ -77,7 +78,7 @@ export default createStyles((theme) => {
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
       [BREAKPOINT]: {
-        marginBottom: theme.spacing.xl,
+        marginBottom: theme.spacing.xs,
       },
     },
 

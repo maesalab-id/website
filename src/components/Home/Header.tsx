@@ -22,8 +22,8 @@ const links: Links[] = [{
   link: "/#testimonials",
   label: "Testimonials",
 }, {
-  link: "/#services",
-  label: "Services",
+  link: "/#about",
+  label: "About",
 }]
 
 
@@ -49,14 +49,16 @@ export const Header = () => {
           placement="end"
           gutter={1}
           control={
-            <NextLink href={link.link} passHref>
-              <Button component="a" variant="subtle" size="xs">
-                <Center>
-                  <span className={classes.linkLabel}>{link.label}</span>
-                  <IconChevronDown size={12} />
-                </Center>
-              </Button>
-            </NextLink>
+            <div>
+              <NextLink href={link.link} passHref>
+                <Button component="a" href={link.link} variant="subtle" size="xs">
+                  <Center>
+                    <span className={classes.linkLabel}>{link.label}</span>
+                    <IconChevronDown size={12} />
+                  </Center>
+                </Button>
+              </NextLink>
+            </div>
           }
         >
           {menuItems}
@@ -67,8 +69,9 @@ export const Header = () => {
     return (
       <NextLink key={link.link} href={link.link} passHref>
         <Button
+          className="COBA"
           component="a"
-          href={link.link}
+          // href={link.link}
           variant="subtle"
           size="xs">
           {link.label}
@@ -94,7 +97,9 @@ export const Header = () => {
           <Box className={classes.links}>
             {items}
           </Box>
-          <Button component="a" href="contact">Contact us</Button>
+          <NextLink href={"/contact"} passHref>
+            <Button component="a">Contact us</Button>
+          </NextLink>
         </Box>
       </Container>
     </MTHeader>

@@ -43,6 +43,11 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
               root: {
                 fontFamily: `Greycliff CF, ${theme.fontFamily}`,
               }
+            }),
+            Timeline: (theme) => ({
+              item: {
+                paddingLeft: theme.spacing.md
+              }
             })
           }}
           emotionOptions={{
@@ -52,6 +57,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           withNormalizeCSS
         >
           <NotificationsProvider>
+            <NextNProgress />
             <Component {...pageProps} />
           </NotificationsProvider>
         </MantineProvider>

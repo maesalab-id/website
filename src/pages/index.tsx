@@ -7,7 +7,7 @@ import { Testimonials } from '../components/Home/Testimonials'
 import { WhyMaesa } from '../components/Home/WhyMaesa'
 import { SecondHeroBanner } from '../components/Home/SecondHeroBanner'
 import { Products } from '../components/Home/Products'
-import { Services } from '../components/Home/Services'
+import { About } from '../components/Home/About'
 import { SEO } from '../components'
 
 const Home: NextPage = () => {
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <Products />
         <WhyMaesa />
         <Testimonials />
-        <Services />
+        <About />
         <SecondHeroBanner />
       </main>
 

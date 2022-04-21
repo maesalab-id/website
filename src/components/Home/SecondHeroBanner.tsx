@@ -16,17 +16,16 @@ export function SecondHeroBanner() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI{' '}
+          Build better {' '}
           <Text component="span" color={theme.primaryColor} inherit>
-            code reviews
+            technologies
           </Text>{' '}
-          for any stack
+          for your bussiness
         </Title>
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
+            So what are you waiting for, please contact our sales.
           </Text>
         </Container>
 

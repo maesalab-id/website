@@ -100,7 +100,7 @@ export function Footer() {
             <MaesalabLogo />
           </Box>
           <Text size="xs" color="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+            Enable a classy geospatial app or non-spatial development in Indonesia
             <br />
             Telp: <Anchor size="xs" target={"_blank"} href={`https://api.whatsapp.com/send?phone=+62816-234-579`}>+62 816-234-579</Anchor>
             <br />

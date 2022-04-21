@@ -99,7 +99,7 @@ export function Testimonials() {
         id={"testimonials"}
         title={<>What <span className={classes.highlight}>founders</span> are saying</>}
         subTitle={"Testimonials"}
-        description={`Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill's tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.`}
+        description={`Let's see what the founders have to say about our service.`}
       />
       <Container mb="xl">
         <Grid align="stretch">

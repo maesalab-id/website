@@ -9,30 +9,30 @@ interface Data {
   phone: string,
 }
 
-export default async function (
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  console.log(req.body)
 
   let transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: "ilomon10@gmail.com",
-      pass: "tnpdnijczwpvszoy"
+      user: process.env.MAIL_AUTH_USER,
+      pass: process.env.MAIL_AUTH_PASS
     },
     secure: true
   })
   try {
+    const { email, company, name, phone, message }: Data = req.body;
     await transporter.sendMail({
-      "from": `Contact Person<${req.body.email}>`,
+      "from": `Contact Person<${email}>`,
       "to": [
         "labmaesa@gmail.com",
         "ilomon10@gmail.com"
       ],
-      "subject": `[Contact] ${req.body.name} from ${req.body.company} - maesalab.com`,
-      "text": `Name\t\t: ${req.body.name}\nCompany\t\t: ${req.body.company}\nEmail\t\t: ${req.body.email}\nPhone Number\t: ${req.body.phone}\n\n ${req.body.message}`,
+      "subject": `[Contact] ${name} from ${company} - maesalab.com`,
+      "text": `Name\t\t: ${name}\nCompany\t\t: ${company}\nEmail\t\t: ${email}\nPhone Number\t: ${phone}\n\n ${message}`,
     })
     res.status(200).json(req.body);
   } catch (err: any) {

@@ -1,4 +1,5 @@
 import { Container, Title, Text, Button } from "@mantine/core"
+import NextLink from "next/link"
 import { IconChevronLeft } from "@tabler/icons"
 import Head from "next/head"
 import React from "react"
@@ -32,15 +33,16 @@ const ThankYou: React.FC = () => {
             </Text>
           </Title>
           <Text mt="md">We appreciate you contacting us. Somebody from our team will get back to you shortly.</Text>
-          <Button
-            variant="outline"
-            component="a"
-            href="/"
-            mt="md"
-            leftIcon={<IconChevronLeft size={12} />}
-          >
-            Back to Home
-          </Button>
+          <NextLink href="/" passHref>
+            <Button
+              variant="outline"
+              component="a"
+              mt="md"
+              leftIcon={<IconChevronLeft size={12} />}
+            >
+              Back to Home
+            </Button>
+          </NextLink>
         </Container>
       </main>
 

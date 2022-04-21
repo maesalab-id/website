@@ -85,14 +85,15 @@ export const Header = () => {
       <Container className={classes.inner}>
         <Box flex grow align="center">
           <Box>
-            <Anchor
-              href="/"
-              color={"dark"}
-            >
-              <MaesalabLogo style={{
-                display: "block"
-              }} />
-            </Anchor>
+            <NextLink href="/" passHref>
+              <Anchor
+                color={"dark"}
+              >
+                <MaesalabLogo style={{
+                  display: "block"
+                }} />
+              </Anchor>
+            </NextLink>
           </Box>
           <Box className={classes.links}>
             {items}

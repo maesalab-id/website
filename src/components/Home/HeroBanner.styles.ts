@@ -13,13 +13,17 @@ export default createStyles((theme) => ({
   },
 
   content: {
+    position: "relative",
+    zIndex: 1,
     width: "100%",
-    maxWidth: 480,
     flexShrink: 0,
+    maxWidth: 420,
 
+    [theme.fn.largerThan('lg')]: {
+      maxWidth: 480,
+    },
     [theme.fn.smallerThan('md')]: {
       maxWidth: '50%',
-      marginRight: 0,
     },
     [theme.fn.smallerThan('sm')]: {
       maxWidth: '100%',
@@ -48,24 +52,57 @@ export default createStyles((theme) => ({
   image: {
     perspective: 1000,
     perspectiveOrigin: "0 50%",
-    padding: `10%`,
-    paddingLeft: 0,
+    padding: 0,
+    transition: "500ms ease",
 
     "& > div": {
-      transform: "rotateY(-25deg)",
-      "-webkit-backface-visibility": "hidden",
-    }
+      transition: "500ms ease",
+      transform: "rotateY(0deg)",
+    },
+
+    [theme.fn.largerThan('sm')]: {
+      "& > div": {
+        transform: "rotateY(-25deg)",
+      },
+      padding: `5%`,
+      paddingLeft: 0,
+
+      "&:hover": {
+        transform: "scale(1.1)",
+        paddingLeft: "7%",
+        "& > div": {
+          transform: "rotateY(0deg)",
+        },
+      }
+    },
   },
   slider: {
     flexGrow: 1,
     width: 1,
-    
+    marginTop: 0,
+    [theme.fn.largerThan('lg')]: {
+      marginTop: -theme.spacing.md,
+    },
     [theme.fn.smallerThan('sm')]: {
+      marginTop: theme.spacing.md,
       flexGrow: 0,
       width: "100%",
     },
     "& .slick-dots li": {
       width: "unset"
-    }
+    },
+    "& .slick-list": {
+      margin: `0 -25px`
+    },
+    "& .slick-slide > div": {
+      margin: `0 25px`
+    },
+    // "& .slick-track > div > div": {
+    //   transition: "500ms ease",
+    //   opacity: 0,
+    // },
+    // "& .slick-track > div.slick-active > div": {
+    //   opacity: 1,
+    // }
   },
 }));

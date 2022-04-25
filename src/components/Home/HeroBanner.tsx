@@ -19,7 +19,7 @@ export function HeroBanner() {
     label: "https://pos.maesalab.com"
   }], []);
   return (
-    <Container>
+    <Container size={"lg"}>
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
@@ -41,7 +41,7 @@ export function HeroBanner() {
           <Slider
             autoplay
             autoplaySpeed={3000}
-            infinite
+            // infinite
             arrows={false}
           >
             {slider.map(({ image, label}, index) => (

@@ -1,79 +1,71 @@
 import { createStyles } from '@mantine/core';
 
-const BREAKPOINT = '@media (max-width: 755px)';
-
 export default createStyles((theme) => ({
-  wrapper: {
-    position: 'relative',
-    boxSizing: 'border-box',
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+  inner: {
+    display: 'flex',
+    paddingTop: theme.spacing.xl * 2,
+    paddingBottom: theme.spacing.xl * 2,
+
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: "column",
+      paddingTop: theme.spacing.xl,
+    },
   },
 
-  inner: {
-    position: 'relative',
-    paddingTop: 200,
-    paddingBottom: 120,
+  content: {
+    width: "100%",
+    maxWidth: 480,
+    flexShrink: 0,
 
-    [BREAKPOINT]: {
-      paddingBottom: 80,
-      paddingTop: 80,
+    [theme.fn.smallerThan('md')]: {
+      maxWidth: '50%',
+      marginRight: 0,
+    },
+    [theme.fn.smallerThan('sm')]: {
+      maxWidth: '100%',
+      marginRight: 0,
     },
   },
 
   title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontSize: 62,
-    fontWeight: 900,
-    lineHeight: 1.1,
-    margin: 0,
-    padding: 0,
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontSize: 44,
+    lineHeight: 1.2,
+    fontWeight: 900,
 
-    [BREAKPOINT]: {
-      fontSize: 42,
-      lineHeight: 1.2,
-    },
-  },
-
-  description: {
-    marginTop: theme.spacing.md,
-    fontSize: 24,
-
-    [BREAKPOINT]: {
-      fontSize: 18,
-    },
-  },
-
-  controls: {
-    marginTop: theme.spacing.xl,
-
-    [BREAKPOINT]: {
-      marginTop: theme.spacing.xl,
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: 28,
     },
   },
 
   control: {
-    height: 54,
-    paddingLeft: 38,
-    paddingRight: 38,
-
-    [BREAKPOINT]: {
-      height: 54,
-      paddingLeft: 18,
-      paddingRight: 18,
+    [theme.fn.smallerThan('xs')]: {
       flex: 1,
     },
   },
 
-  githubControl: {
-    borderWidth: 2,
-    borderColor: theme.colorScheme === 'dark' ? 'transparent' : theme.colors.dark[9],
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : 'transparent',
+  image: {
+    perspective: 1000,
+    perspectiveOrigin: "0 50%",
+    padding: `10%`,
+    paddingLeft: 0,
 
-    '&:hover': {
-      backgroundColor: `${
-        theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0]
-      } !important`,
+    "& > div": {
+      transform: "rotateY(-25deg)",
+      "-webkit-backface-visibility": "hidden",
+    }
+  },
+  slider: {
+    flexGrow: 1,
+    width: 1,
+    
+    [theme.fn.smallerThan('sm')]: {
+      flexGrow: 0,
+      width: "100%",
     },
+    "& .slick-dots li": {
+      width: "unset"
+    }
   },
 }));

@@ -15,9 +15,9 @@ export function HeroBanner() {
     image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/digisign.jpg",
     label: "https://digisign.maesalab.com"
   }, {
-  //   image: "/image/easpirasi.png",
-  //   label: "https://easpirasi.maesalab.com"
-  // }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/easpirasi.png",
+    label: "https://easpirasi.maesalab.com"
+  }, {
     image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/elan.jpg",
     label: "https://elan.maesalab.com"
   }, {
@@ -26,15 +26,15 @@ export function HeroBanner() {
   }, {
     image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/jobdesk.jpg",
     label: "https://jobdesk.maesalab.com"
-  // }, {
-  //   image: "/image/ovor.png",
-  //   label: "https://ovor.maesalab.com"
-  // }, {
-  //   image: "/image/pos.png",
-  //   label: "https://pos.maesalab.com"
-  // }, {
-  //   image: "/image/website.jpg",
-  //   label: "https://website.maesalab.com"
+  }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/ovor.png",
+    label: "https://ovor.maesalab.com"
+  }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/pos.png",
+    label: "https://pos.maesalab.com"
+  }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/website.jpg",
+    label: "https://website.maesalab.com"
   }], []);
   return (
     <Container size={"lg"}>

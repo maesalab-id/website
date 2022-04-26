@@ -22,7 +22,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   return (
     <>
       <Head>
-        <title>Mantine next example</title>
+        <title>Maesalab Tech Indonesia</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
@@ -52,9 +52,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
               }
             })
           }}
-          emotionOptions={{
-            key: "ml"
-          }}
           withGlobalStyles
           withNormalizeCSS
         >
@@ -68,6 +65,6 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   );
 }
 
-// App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
-//   colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
-// });
+App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
+  colorScheme: getCookie('mantine-color-scheme', ctx) || 'light',
+});

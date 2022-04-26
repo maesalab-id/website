@@ -9,22 +9,22 @@ export function HeroBanner() {
 
   const { classes } = useStyles();
   const slider = useMemo(() => [{
-  //   image: "/image/akademik.png",
-  //   label: "https://akademik.maesalab.com"
-  // }, {
-  //   image: "/image/digisign.jpg",
-  //   label: "https://digisign.maesalab.com"
-  // }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/akademik.png",
+    label: "https://akademik.maesalab.com"
+  }, {
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/digisign.jpg",
+    label: "https://digisign.maesalab.com"
+  }, {
   //   image: "/image/easpirasi.png",
   //   label: "https://easpirasi.maesalab.com"
   // }, {
-    image: "/image/elan.jpg",
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/elan.jpg",
     label: "https://elan.maesalab.com"
   }, {
-    image: "/image/eoffice.png",
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/eoffice.png",
     label: "https://eoffice.maesalab.com"
   }, {
-    image: "/image/jobdesk.jpg",
+    image: "https://raw.githubusercontent.com/maesalab-id/website/main/public/image/jobdesk.jpg",
     label: "https://jobdesk.maesalab.com"
   // }, {
   //   image: "/image/ovor.png",

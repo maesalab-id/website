@@ -7,11 +7,11 @@ import { Window } from './Window';
 
 import slider_akademik from "./assets/akademik.png";
 import slider_digisign from "./assets/digisign.jpg";
-import slider_easpirasi from "./assets/easpirasi.png";
-import slider_elan from "./assets/elan.jpg";
-import slider_eoffice from "./assets/eoffice.png";
+// import slider_easpirasi from "./assets/easpirasi.png";
+// import slider_elan from "./assets/elan.jpg";
+// import slider_eoffice from "./assets/eoffice.png";
 import slider_jobdesk from "./assets/jobdesk.jpg";
-import slider_ovor from "./assets/ovor.png";
+// import slider_ovor from "./assets/ovor.png";
 import slider_pos from "./assets/pos.png";
 import slider_website from "./assets/website.jpg";
 
@@ -24,21 +24,21 @@ export function HeroBanner() {
   }, {
     image: slider_digisign,
     label: "https://digisign.maesalab.com"
-  }, {
-    image: slider_easpirasi,
-    label: "https://easpirasi.maesalab.com"
-  }, {
-    image: slider_elan,
-    label: "https://elan.maesalab.com"
-  }, {
-    image: slider_eoffice,
-    label: "https://eoffice.maesalab.com"
+  // }, {
+  //   image: slider_easpirasi,
+  //   label: "https://easpirasi.maesalab.com"
+  // }, {
+  //   image: slider_elan,
+  //   label: "https://elan.maesalab.com"
+  // }, {
+  //   image: slider_eoffice,
+  //   label: "https://eoffice.maesalab.com"
   }, {
     image: slider_jobdesk,
     label: "https://jobdesk.maesalab.com"
-  }, {
-    image: slider_ovor,
-    label: "https://ovor.maesalab.com"
+  // }, {
+  //   image: slider_ovor,
+  //   label: "https://ovor.maesalab.com"
   }, {
     image: slider_pos,
     label: "https://pos.maesalab.com"

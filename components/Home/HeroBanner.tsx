@@ -12,12 +12,12 @@ export function HeroBanner() {
   //   image: "/image/akademik.png",
   //   label: "https://akademik.maesalab.com"
   // }, {
-    image: "/image/digisign.jpg",
-    label: "https://digisign.maesalab.com"
-  }, {
-    image: "/image/easpirasi.png",
-    label: "https://easpirasi.maesalab.com"
-  }, {
+  //   image: "/image/digisign.jpg",
+  //   label: "https://digisign.maesalab.com"
+  // }, {
+  //   image: "/image/easpirasi.png",
+  //   label: "https://easpirasi.maesalab.com"
+  // }, {
     image: "/image/elan.jpg",
     label: "https://elan.maesalab.com"
   }, {

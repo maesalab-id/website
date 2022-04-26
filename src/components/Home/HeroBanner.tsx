@@ -9,9 +9,9 @@ export function HeroBanner() {
 
   const { classes } = useStyles();
   const slider = useMemo(() => [{
-    image: "/image/akademik.png",
-    label: "https://akademik.maesalab.com"
-  }, {
+  //   image: "/image/akademik.png",
+  //   label: "https://akademik.maesalab.com"
+  // }, {
     image: "/image/digisign.jpg",
     label: "https://digisign.maesalab.com"
   }, {
@@ -26,15 +26,15 @@ export function HeroBanner() {
   }, {
     image: "/image/jobdesk.jpg",
     label: "https://jobdesk.maesalab.com"
-  }, {
-    image: "/image/ovor.png",
-    label: "https://ovor.maesalab.com"
-  }, {
-    image: "/image/pos.png",
-    label: "https://pos.maesalab.com"
-  }, {
-    image: "/image/website.jpg",
-    label: "https://website.maesalab.com"
+  // }, {
+  //   image: "/image/ovor.png",
+  //   label: "https://ovor.maesalab.com"
+  // }, {
+  //   image: "/image/pos.png",
+  //   label: "https://pos.maesalab.com"
+  // }, {
+  //   image: "/image/website.jpg",
+  //   label: "https://website.maesalab.com"
   }], []);
   return (
     <Container size={"lg"}>

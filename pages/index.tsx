@@ -20,10 +20,8 @@ const Home: NextPage = () => {
         <SEO />
       </Head>
 
-      <Header />
-
+      <HeroBanner />
       <main>
-        <HeroBanner />
         <Products />
         <WhyMaesa />
         <Testimonials />

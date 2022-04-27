@@ -89,9 +89,11 @@ export const Header = () => {
               <Anchor
                 color={"dark"}
               >
-                <MaesalabLogo style={{
-                  display: "block"
-                }} />
+                <MaesalabLogo
+                  style={{
+                    display: "block"
+                  }}
+                />
               </Anchor>
             </NextLink>
           </Box>

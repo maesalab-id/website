@@ -4,6 +4,7 @@ import useStyles from './HeroBanner.styles';
 import { NextLink } from '@mantine/next';
 import Slider from "react-slick";
 import { Window } from './Window';
+import { Header } from './Header';
 
 export function HeroBanner() {
 
@@ -37,43 +38,46 @@ export function HeroBanner() {
     label: "https://website.maesalab.com"
   }], []);
   return (
-    <Container size={"lg"}>
-      <div className={classes.inner}>
-        <div className={classes.content}>
-          <Title className={classes.title}>
-            Focused on <Text inherit component="span" variant="gradient" gradient={{ from: "green", to: "teal" }}>Web Standards</Text > to build better technologies
-          </Title>
-          <Text color="dimmed" mt="md">
-            Enable a classy geospatial app or non-spatial development in Indonesia
-          </Text>
-          <Group mt={30}>
-            <Button component={NextLink} href="/contact" radius="sm" size="md" className={classes.control}>
-              Book now
-            </Button>
-            <Button component={NextLink} href="/contact" variant="default" radius="sm" size="md" className={classes.control}>
-              Or Consult
-            </Button>
-          </Group>
+    <header className={classes.wrapper}>
+      <Header />
+      <Container size={"lg"}>
+        <div className={classes.inner}>
+          <div className={classes.content}>
+            <Title className={classes.title}>
+              Focused on <Text inherit component="span" variant="gradient" gradient={{ from: "green", to: "teal" }}>Web Standards</Text > to build better technologies
+            </Title>
+            <Text color="dimmed" mt="md">
+              Enable a classy geospatial app or non-spatial development in Indonesia
+            </Text>
+            <Group mt={30}>
+              <Button component={NextLink} href="/contact" radius="sm" size="md" className={classes.control}>
+                Book now
+              </Button>
+              <Button component={NextLink} href="/contact" variant="default" radius="sm" size="md" className={classes.control}>
+                Or Consult
+              </Button>
+            </Group>
+          </div>
+          <div className={classes.slider}>
+            <Slider
+              autoplay
+              autoplaySpeed={3000}
+              // infinite
+              arrows={false}
+            >
+              {slider.map(({ image, label }, index) => (
+                <div key={index} className={classes.image} >
+                  <Window title={label}>
+                    <AspectRatio ratio={16 / 9}>
+                      <Image src={image} alt={label} />
+                    </AspectRatio>
+                  </Window>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
-        <div className={classes.slider}>
-          <Slider
-            autoplay
-            autoplaySpeed={3000}
-            // infinite
-            arrows={false}
-          >
-            {slider.map(({ image, label }, index) => (
-              <div key={index} className={classes.image} >
-                <Window title={label}>
-                  <AspectRatio ratio={16 / 9}>
-                    <Image src={image} alt={label} />
-                  </AspectRatio>
-                </Window>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </header>
   );
 }

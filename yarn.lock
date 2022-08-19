@@ -465,10 +465,10 @@
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.0.8.tgz"
   integrity sha512-ZK5v4bJwgXldAUA8r3q9YKfCwOqoHTK/ZqRjSeRXQrBXWouoPnS4MQtgC4AXGiiBuUu5wxrRgTlv0ktmM4P1Aw==
 
-"@tabler/icons@^1.65.0":
-  version "1.65.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.65.0.tgz#53d0ec68bceeb15fe038c186eed9478aa8f068bf"
-  integrity sha512-xax2W/vgjPDEh1/fN2hFuSiwC9a9eFxl3oD4XnGrYVHf177+LLj4+on7O2WCGXnHnsIftPsqARnvbga1dGpu0g==
+"@tabler/icons@^1.68.0":
+  version "1.68.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.68.0.tgz#047bd88966cc24ef957b3c429a13bb82cca95561"
+  integrity sha512-UseBEEhv7r+Drl3iZih7rkwqkfJJZscjd5ZvK1WdIIulQsBa+qE8WBDGdAO0RtjkCclEK88z9kC0s5wiVPIvkw==
 
 "@types/cookie@^0.4.1":
   version "0.4.1"

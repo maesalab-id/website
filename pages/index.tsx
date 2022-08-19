@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Header } from '../components/Home/Header'
 import { Footer } from '../components/Home/Footer'
 import { HeroBanner } from '../components/Home/HeroBanner'
 import { Testimonials } from '../components/Home/Testimonials'

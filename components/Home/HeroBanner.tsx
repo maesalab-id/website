@@ -42,11 +42,11 @@ export function HeroBanner() {
       <Header />
       <Container size={"lg"}>
         <div className={classes.inner}>
-          <div className={classes.content}>
+          <article className={classes.content}>
             <Title className={classes.title}>
               Focused on <Text inherit component="span" variant="gradient" gradient={{ from: "green", to: "teal" }}>Web Standards</Text > to build better technologies
             </Title>
-            <Text color="dimmed" mt="md">
+            <Text component="p" color="dimmed" mt="md">
               Enable a classy geospatial app or non-spatial development in Indonesia
             </Text>
             <Group mt={30}>
@@ -57,7 +57,7 @@ export function HeroBanner() {
                 Or Consult
               </Button>
             </Group>
-          </div>
+          </article>
           <div className={classes.slider}>
             <Slider
               autoplay

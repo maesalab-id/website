@@ -6,84 +6,42 @@ import { SectionText } from './SectionText';
 
 const testimonials = [{
   postedAt: "Pemerintah Kota Manado",
-  body: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  body: "Katedu telah membantu perusahaan kami mengelola kehadiran karyawan dan meja kerja dengan lebih efisien. Platform berbasis aplikasi mobile memudahkan kita untuk mendapatkan data performa secara real time. Kami sekarang dapat lebih akurat melacak kehadiran dan jobdesk karyawan kami, baik WFO maupun WFH.",
   author: {
     name: "Imanuel Pundoko",
     image: "https://gravatar.com/avatar/4f5e8b0eb49c6b9bf9c04a3f02c0192e?s=400&d=robohash&r=x"
   }
 }, {
   postedAt: "Pemerintah Kota Bitung",
-  body: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  body: "Saya menemukan bahwa Katedu memberikan solusi yang akurat, real-time dan efisien untuk data kinerja. Aplikasi seluler mudah digunakan dan membantu saya melacak kehadiran karyawan dan meja kerja. Ini telah membantu saya untuk meningkatkan produktivitas saya di tempat kerja.",
   author: {
     name: "Edgar Pontoh",
     image: "https://gravatar.com/avatar/3ad16c44a75e2dbb954d5e46d507e260?s=400&d=robohash&r=x"
   }
 }, {
   postedAt: "CV. Berkat Baterai Mulia",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  body: "Kasir telah membantu perusahaan saya untuk mengelola kehadiran karyawan dan tugas pekerjaan dengan lebih efisien. Aplikasi seluler sangat ramah pengguna dan datanya diambil secara akurat secara real-time. Hal ini telah membantu kami untuk meningkatkan produktivitas kerja dan operasional kami.",
   author: {
     name: "Yohanes Sahante",
     image: "https://gravatar.com/avatar/2720ac25e40d93af82556e2380f272ef?s=400&d=robohash&r=x"
   }
 }, {
-  postedAt: "Pemerintah Prov. Sulawesi Utara",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  postedAt: "Politeknik Manado",
+  body: "E-Office telah membantu merampingkan administrasi kantor dan manajemen dokumen kami. Solusi digital yang ditawarkan oleh E-Office nyaman dan efisien. Kami sangat merekomendasikan layanan mereka kepada perusahaan dan institusi lain.",
   author: {
-    name: "Benny Nanlohy",
-    image: "https://gravatar.com/avatar/55b6410eaa8f684afda9d834915363a4?s=400&d=robohash&r=x"
+    name: "Djorkaef Sengka",
+    image: "https://gravatar.com/avatar/2abe2989ee26f56d92531127eeebb795?s=400&d=robohash&r=x"
   }
 }, {
-  postedAt: "Pemerintah Kota Manado",
-  body: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  postedAt: "Pemkab. Minahasa Utara",
+  body: "Melalui Aplikasi CTS Dukcapil Maesalab saya dapat mengajukan permohonan penerbitan dokumen kependudukan saya secara online tanpa harus pergi ke Kantor Kependudukan dan Pencatatan Sipil. Prosesnya sangat lancar dan efisien, dan saya sangat terkejut melihat betapa cepatnya saya menerima dokumen saya. Saya akan sangat merekomendasikan layanan ini kepada siapa saja yang perlu mengajukan permohonan dokumen kependudukan.",
   author: {
-    name: "Imanuel Pundoko",
-    image: "https://gravatar.com/avatar/4f5e8b0eb49c6b9bf9c04a3f02c0192e?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "Pemerintah Kota Bitung",
-  body: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-  author: {
-    name: "Edgar Pontoh",
-    image: "https://gravatar.com/avatar/3ad16c44a75e2dbb954d5e46d507e260?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "CV. Berkat Baterai Mulia",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  author: {
-    name: "Yohanes Sahante",
-    image: "https://gravatar.com/avatar/2720ac25e40d93af82556e2380f272ef?s=400&d=robohash&r=x"
+    name: "Ridho Sembadah",
+    image: "https://gravatar.com/avatar/4cb51cdee04647e75ab2876eda17b0af?s=400&d=robohash&r=x"
   }
 }, {
   postedAt: "Pemerintah Prov. Sulawesi Utara",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  author: {
-    name: "Benny Nanlohy",
-    image: "https://gravatar.com/avatar/55b6410eaa8f684afda9d834915363a4?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "Pemerintah Kota Manado",
-  body: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  author: {
-    name: "Imanuel Pundoko",
-    image: "https://gravatar.com/avatar/4f5e8b0eb49c6b9bf9c04a3f02c0192e?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "Pemerintah Kota Bitung",
-  body: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-  author: {
-    name: "Edgar Pontoh",
-    image: "https://gravatar.com/avatar/3ad16c44a75e2dbb954d5e46d507e260?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "CV. Berkat Baterai Mulia",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  author: {
-    name: "Yohanes Sahante",
-    image: "https://gravatar.com/avatar/2720ac25e40d93af82556e2380f272ef?s=400&d=robohash&r=x"
-  }
-}, {
-  postedAt: "Pemerintah Prov. Sulawesi Utara",
-  body: "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  body: "Saya menemukan aplikasi LAPOR sangat ramah pengguna dan membantu. Ini adalah platform yang bagus bagi publik untuk menyuarakan keluhan dan aspirasi mereka tentang layanan publik. Respon time dari instansi terkait juga cepat dan memuaskan. Saya pasti akan merekomendasikan aplikasi ini kepada orang lain.",
   author: {
     name: "Benny Nanlohy",
     image: "https://gravatar.com/avatar/55b6410eaa8f684afda9d834915363a4?s=400&d=robohash&r=x"

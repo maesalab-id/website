@@ -52,7 +52,7 @@ export function WhyMaesa() {
 
   return (
     <Container id="why" my="xl">
-      <div className={classes.wrapper}>
+      <article className={classes.wrapper}>
         <Grid gutter={"lg"}>
           <Col span={12} md={5}>
             <Title className={classes.title} order={2}>
@@ -83,7 +83,7 @@ export function WhyMaesa() {
             </SimpleGrid>
           </Col>
         </Grid>
-      </div>
+      </article>
     </Container>
   );
 }

@@ -47,7 +47,7 @@ const _products: Products[] = [{
   description: (
     <div>
       <Text mb="xs">Geospatial Manager</Text>
-      <CardDescription excerpt={"Lorem ipsum dolor sit amet"}>
+      <CardDescription excerpt={"Solusi kemudahan masyarakat untuk menyampaikan laporan"}>
         <Text size="sm">
           <Text inherit>Solusi kemudahan masyarakat untuk menyampaikan laporan atau keluhan mengenai kekurangan dan kelemahan dari pelayanan publik tertentu.</Text>
           <Text inherit>Aplikasi Layanan Aspirasi dan Pengaduan Online (LAPOR) PRISY ini dapat diakses melalui website dan aplikasi mobile pada smartphone.</Text>

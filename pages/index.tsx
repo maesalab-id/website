@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Maesalab Tech Indonesia</title>
-        <meta name="description" content="Focused on Web Standards to build better technologies" />
+        <meta name="description" content="Focused on Web Standards to build better technologies. Assist all types of companies and governments in Indonesia in utilizing a reliable and integrated information system." />
         <link rel="icon" href="/favicon.ico" />
         <SEO />
       </Head>
